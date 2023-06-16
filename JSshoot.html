@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shooting Game</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: purple;
+      }
+      canvas {
+        background-color: black;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <script src="jsshoot.js"></script>
+  </body>
+  <footer align="center">
+    <button id="reload">Reload</button>
+
+<script>
+  var reload = document.getElementById('reload');
+  reload.addEventListener('click', function() {
+    window.location.reload();
+  });
+</script>
+
+  </footer>
+</html>
