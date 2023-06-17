@@ -10,11 +10,11 @@ const boxWidth = 50;
 const boxHeight = 50;
 let box1X = 400;
 let box1Y = 400;
-const box1Speed = 5;
+const box1Speed = 10;
 
 let box2X = 800;
 let box2Y = 200;
-const box2Speed = 5;
+const box2Speed = 10;
 
 // Bullet attributes
 const bulletWidth = 10;
@@ -64,10 +64,10 @@ let box1HitCount = 0;
 let box2HitCount = 0;
 
 function displayHitCounts() {
-  ctx.font = '20px Arial';
+  ctx.font = '25px Arial';
   ctx.fillStyle = '#ffffff';
-  ctx.fillText(`Box1 Hits: ${box1HitCount}`, 10, 20);
-  ctx.fillText(`Box2 Hits: ${box2HitCount}`, canvas.width - 130, 20);
+  ctx.fillText(`RED Hits: ${box1HitCount}`, 10, 20);
+  ctx.fillText(`Green Hits: ${box2HitCount}`, canvas.width - 160, 20);
 }
 
 function update() {
@@ -93,8 +93,8 @@ function update() {
   // Display hit counts
   displayHitCounts();
 
-  // Check if box1HitCount reaches 50
-  if (box1HitCount >= 50 || box2HitCount >= 50) {
+  // Check if box1HitCount reaches 25
+  if (box1HitCount >= 50 || box2HitCount >= 25) {
     running = false;
     endGame();
   }

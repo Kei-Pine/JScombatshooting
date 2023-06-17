@@ -3,6 +3,9 @@
   <head>
     <title>Shooting Game</title>
     <style>
+      html{
+        zoom:83%
+      }
       body {
         margin: 0;
         padding: 0;
@@ -13,16 +16,35 @@
         display: block;
         margin: 0 auto;
       }
+      header {
+        text-align: center;
+        color: aliceblue;
+        font-style: bold;
+        font-size:large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifaaaaaaaa;
+
+      }
     </style>
   </head>
+  <header>
+    <details>
+      <summary>How to Play</summary>
+      <h1>PlayerLeft(red)   :SPACE key to shoot, WSAD to move UpDownLeftRight
+        <br>PlayerRight(Green):P key to shoot, UpDownLeftRight key to move</h1>
+      <h1>Player who hits 50 wins!!</h1>
+      <p>Player Red can shoot left to right</p>
+      <p>Player Green can shoot right to left</p>
+      <p>reload to play again</p>
+     </details>
+  </header>
   <body>
     <canvas id="gameCanvas"></canvas>
     <script src="jsshoot.js"></script>
   </body>
   <footer align="center">
-    <button id="reload">Reload</button>
-
-<script>
+   <!-- <button id="reload">Reload</button>-->
+  
+   <script>
   var reload = document.getElementById('reload');
   reload.addEventListener('click', function() {
     window.location.reload();
